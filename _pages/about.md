@@ -13,6 +13,6 @@ My research lies at the intersection of **mathematics and artificial intelligenc
 - Sparse identification in stochastic dynamical systems
 - Federated learning & reinforcement learning
 
-**Email**: [gandie@nankai.edu.cn](mailto:gandie@nankai.edu.cn)  
+
 **Address**: No. 38, Tongyan Road, Jinnan District, Tianjin, China  
 
