@@ -2,7 +2,7 @@
 layout: single
 title: About Me
 permalink: /about/
-author_profile: true  # 如果你希望模板自动生成头像，保留；否则设为 false
+author_profile: false  # 如果你希望模板自动生成头像，保留；否则设为 false
 ---
 
 <img src="/assets/img/avatar.jpg" width="200" style="border-radius: 50%; float: right; margin-left: 20px;" />
