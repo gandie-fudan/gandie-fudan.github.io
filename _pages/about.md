@@ -5,7 +5,7 @@ permalink: /about/
 # author_profile: false  # 如果你希望模板自动生成头像，保留；否则设为 false
 ---
 
-<img src="/assets/img/avatar.jpg" width="200" style="border-radius: 50%; float: right; margin-left: 20px;" />
+#<img src="/assets/img/avatar.jpg" width="200" style="border-radius: 50%; float: right; margin-left: 20px;" />
 
 I am an **Associate Professor** at the **College of Artificial Intelligence**, **Nankai University**.  
 Previously, I was a Postdoctoral Fellow at **Zhongguancun Laboratory**, Beijing.
