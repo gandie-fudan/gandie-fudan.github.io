@@ -1,4 +1,3 @@
----
 layout: single
 title: About Me
 permalink: /about/
@@ -12,7 +11,3 @@ My research lies at the intersection of **mathematics and artificial intelligenc
 - Distributed adaptive learning and control
 - Sparse identification in stochastic dynamical systems
 - Federated learning & reinforcement learning
-
-
-**Address**: No. 38, Tongyan Road, Jinnan District, Tianjin, China  
-
