@@ -15,4 +15,4 @@ My research lies at the intersection of **mathematics and artificial intelligenc
 
 **Email**: [gandie@nankai.edu.cn](mailto:gandie@nankai.edu.cn)  
 **Address**: No. 38, Tongyan Road, Jinnan District, Tianjin, China  
-# [Curriculum Vitae (PDF)](/assets/pdf/CV_DieGan.pdf)
+
