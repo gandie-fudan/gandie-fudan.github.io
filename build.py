@@ -1,0 +1,58 @@
+"""Generate a bilingual GitHub Pages site using Python's standard library."""
+import html,json,shutil
+from pathlib import Path
+from urllib.parse import urlparse
+ROOT=Path(__file__).resolve().parent
+DATA=json.loads((ROOT/'content.json').read_text(encoding='utf-8'))
+OUT=ROOT/'dist'
+OUT.mkdir(exist_ok=True)
+esc=lambda x:html.escape(str(x),quote=True)
+PAGES={'index':('简介','About'),'publications':('论文','Publications'),'projects':('项目','Projects'),'teaching':('教学','Teaching'),'experience':('经历','Experience'),'service':('服务与荣誉','Service & honors')}
+pubs=sorted(DATA['publications'],key=lambda p:-p['year'])
+assert len({p['id'] for p in pubs})==len(pubs),'Publication IDs must be unique'
+assert all(p['status'] in ['published','accepted','review','unspecified'] for p in pubs)
+photo=DATA.get('photo','')
+if photo:
+ resolved=(ROOT/photo).resolve()
+ assert resolved.is_relative_to(ROOT/'assets') and resolved.is_file(),'Photo must exist inside assets/'
+for lang in ['zh','en']:
+ zh=lang=='zh'
+ def t(a,b):return a if zh else b
+ def url(page,language=None):return page+('' if (language or lang)=='zh' else '-en')+'.html'
+ def rows(key):
+  return '<div class="timeline">'+''.join('<article class="timeline-row"><p class="date">'+esc(p['date'])+(t('至今','present') if p['date'].endswith('–') else '')+'</p><div>'+('<span class="badge">'+esc(p['role'][lang])+'</span> ' if 'role' in p else '')+esc(p[lang])+'</div></article>' for p in DATA[key])+'</div>'
+ status={'published':t('已发表','Published'),'accepted':t('已录用','Accepted'),'review':t('在审','Under review'),'unspecified':t('预印本／在审栏目，具体状态未注明','Preprint / under-review section; exact status unspecified')}
+ def paper(p):
+  links=''
+  for link in p.get('links',[]):
+   assert urlparse(link['url']).scheme in ['https','http'],'Paper links must use HTTPS or HTTP'
+   links+=f'<a class="paper-link" href="{esc(link["url"])}">{esc(link["label"])} ↗</a>'
+  authors=esc(p['authors']).replace('D. Gan','<strong>D. Gan</strong>')
+  return f'<article class="paper" data-year="{p["year"]}" data-status="{p["status"]}" data-kind="{p["kind"]}"><div class="paper-year">{p["year"]}</div><div class="paper-content"><div class="paper-meta">{t("期刊","Journal") if p["kind"]=="journal" else t("会议","Conference")}<span> / </span>{status[p["status"]]}</div><h3 lang="en">{esc(p["title"])}</h3><p class="authors" lang="en">{authors}</p><p class="venue" lang="en">{esc(p["venue"])}</p>{links}</div></article>'
+ def heading(title,note=''):
+  return f'<div class="page-heading"><h1>{title}</h1>{"<p>"+note+"</p>" if note else ""}</div>'
+ contact=f'<div class="contact-strip"><div><strong>{esc(DATA["affiliation"][lang])}</strong><p>{t("中国 · 上海","Shanghai, China")}</p></div><a href="mailto:{esc(DATA["email"])}">{esc(DATA["email"])} ↗</a></div>'
+ home=f'<section class="profile {"has-photo" if photo else ""}" aria-labelledby="name"><div><p class="eyebrow">{t("复旦大学 · 数学科学学院","FUDAN UNIVERSITY · MATHEMATICS")}</p><h1 id="name">{esc(DATA["name"][lang])}<span>{t("Die Gan","甘叠")}</span></h1><p class="role">{esc(DATA["role"][lang])}</p><p class="bio">{esc(DATA["bio"][lang])}</p><div class="profile-links"><a href="mailto:{esc(DATA["email"])}">{esc(DATA["email"])} ↗</a><a href="{url("experience")}">{t("教育与工作经历","Experience & education")} →</a></div></div>'+(f'<img class="portrait" src="{esc(photo)}" alt="{esc(DATA["name"][lang])}" width="260" height="320">' if photo else '')+'</section>'
+ home+='<section class="research" aria-labelledby="research-title"><h2 id="research-title">'+t('研究方向','Research interests')+'</h2><div class="research-grid">'+''.join(f'<article><span class="number">0{i+1}</span><h3>{esc(r[lang][0])}</h3><p>{esc(r[lang][1])}</p></article>' for i,r in enumerate(DATA['research']))+'</div></section>'
+ home+=f'<section class="selected" aria-labelledby="selected-title"><div class="section-heading"><h2 id="selected-title">{t("代表论文","Selected publications")}</h2><a href="{url("publications")}">{t("全部论文","All publications")} →</a></div>'+''.join(paper(p) for p in pubs if p.get('selected'))+'</section>'
+ options=lambda pairs:''.join(f'<option value="{k}">{esc(v)}</option>' for k,v in pairs)
+ filters=f'<div class="filters"><label for="search">{t("搜索论文","Search publications")}<input id="search" type="search" placeholder="{t("题名、作者、年份…","Title, author, year…")}"></label><label for="kind">{t("类型","Type")}<select id="kind">'+options([('all',t('全部类型','All types')),('journal',t('期刊','Journal')),('conference',t('会议','Conference'))])+f'</select></label><label for="status">{t("状态","Status")}<select id="status">'+options([('all',t('全部状态','All statuses'))]+list(status.items()))+'</select></label></div><p id="result-count" role="status" aria-live="polite"></p>'
+ publications=heading(t('研究论文','Publications'),t('随机系统、自适应辨识与分布式学习。','Stochastic systems, adaptive identification and distributed learning.'))+f'<p class="editorial-note">{t("* 表示简历明确标注的通讯作者；作者顺序与发表状态按提供的简历保留。","* Corresponding author as explicitly marked in the supplied CV. Author order and publication statuses follow the CV.")}</p><div class="jump-links">'+''.join(f'<a href="#{s}">{status[s]} <span>{sum(p["status"]==s for p in pubs)}</span></a>' for s in ['published','accepted','review'])+'</div>'+filters+'<div id="all-publications">'
+ for state in ['published','accepted','review','unspecified']:
+  group=[p for p in pubs if p['status']==state]
+  if group:publications+=f'<section class="publication-group" id="{state}"><h2>{status[state]}</h2>'+''.join(paper(p) for p in group)+'</section>'
+ publications+='</div><p id="empty" hidden>'+t('没有匹配的论文。请调整关键词或筛选条件。','No matching publications. Try another keyword or filter.')+'</p>'
+ publications+=f'<section class="patents"><h2>{t("专利","Patents")}</h2><div class="timeline">'+''.join(f'<article class="timeline-row"><p class="date">{esc(p["date"])}</p><div><span class="badge">{t("审查中","Under examination") if "Under Examination" in p["text"] else t("已授权","Granted")}</span><p lang="en">{esc(p["text"])}</p></div></article>' for p in sorted(DATA['patents'],key=lambda p:p['date'],reverse=True))+'</div></section>'
+ projects=heading(t('科研项目','Research support'),t('以下项目均在简历中列为主持（PI），日期为项目起止时间。','All projects below are listed as PI in the CV. Dates indicate project periods.'))+rows('projects')
+ teaching=heading(t('教学工作','Teaching'),t('课程教学与学生指导。','Courses and student mentoring.'))+rows('teaching')+f'<section class="mentoring"><h2>{t("教学与指导成果","Student mentoring")}</h2><p>{esc(DATA["mentoring"][lang])}</p></section>'
+ experience=heading(t('教育与工作经历','Experience & education'))+f'<section><h2>{t("工作经历","Appointments")}</h2>'+rows('work')+f'</section><section class="spaced"><h2>{t("教育背景","Education")}</h2>'+rows('education')+'</section>'
+ service=heading(t('学术服务与荣誉','Service & honors'))+f'<section><h2>{t("学术服务","Professional service")}</h2>'+rows('service')+f'</section><section class="spaced"><h2>{t("荣誉与奖励","Honors & awards")}</h2>'+rows('honors')+'</section>'
+ for page,body in dict(index=home,publications=publications,projects=projects,teaching=teaching,experience=experience,service=service).items():
+  nav=''.join(f'<a href="{url(k)}" {"aria-current=page" if k==page else ""}>{v[0 if zh else 1]}</a>' for k,v in PAGES.items())
+  title=esc(DATA['name'][lang])+' · '+PAGES[page][0 if zh else 1]+' | '+t('复旦大学','Fudan University')
+  doc=f'''<!doctype html>
+<html lang="{'zh-CN' if zh else 'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><meta name="description" content="{esc(DATA['bio'][lang])}"><meta name="color-scheme" content="light"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css"><link rel="alternate" hreflang="zh-CN" href="{url(page,'zh')}"><link rel="alternate" hreflang="en" href="{url(page,'en')}"><script src="assets/site.js" defer></script></head><body><a class="skip" href="#main">{t('跳转至正文','Skip to content')}</a><header><div class="header-inner"><a class="brand" href="{url('index')}">{esc(DATA['name'][lang])}<span>{t(' / Die Gan',' / 甘叠')}</span></a><nav aria-label="{t('主导航','Main navigation')}">{nav}</nav><a class="language" href="{url(page,'en' if zh else 'zh')}" lang="{'en' if zh else 'zh-CN'}">{t('EN','中文')}</a></div></header><main id="main" class="{page}">{body}</main><footer>{contact}<div class="footer-bottom"><span>© {esc(DATA['name'][lang])} · {t('学术个人主页','Academic website')}</span><a href="#main">{t('返回顶部','Back to top')} ↑</a></div></footer></body></html>'''
+  (OUT/url(page)).write_text(doc,encoding='utf-8')
+shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
+(OUT/'.nojekyll').touch()
+print(f'Built 12 bilingual pages; {len(pubs)} publications; {len(DATA["projects"])} projects.')

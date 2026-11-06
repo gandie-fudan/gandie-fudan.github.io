@@ -1,0 +1,763 @@
+{
+  "name": {
+    "zh": "甘叠",
+    "en": "Die Gan"
+  },
+  "role": {
+    "zh": "研究员 · 博士生导师",
+    "en": "Assistant Professor A (Researcher) · PhD Supervisor"
+  },
+  "affiliation": {
+    "zh": "复旦大学 · 数学科学学院",
+    "en": "School of Mathematical Sciences · Fudan University"
+  },
+  "email": "gandie@fudan.edu.cn",
+  "bio": {
+    "zh": "研究随机系统的自适应辨识与控制，关注分布式学习、稀疏辨识及其数学基础。2026 年 6 月加入复旦大学数学科学学院，此前任南开大学人工智能学院副教授。",
+    "en": "My research focuses on adaptive identification and control of stochastic systems, with interests in distributed learning, sparse identification and their mathematical foundations. I joined Fudan University in June 2026, after serving as an Associate Professor at Nankai University."
+  },
+  "research": [
+    {
+      "zh": [
+        "分布式自适应学习与控制",
+        "研究多个节点如何利用各自的数据协同学习、估计并控制随机系统。"
+      ],
+      "en": [
+        "Distributed adaptive learning & control",
+        "How networked agents learn, estimate and control stochastic systems using local data."
+      ]
+    },
+    {
+      "zh": [
+        "随机动态系统的稀疏辨识",
+        "关注如何从带噪观测中识别系统的关键参数与稀疏结构。"
+      ],
+      "en": [
+        "Sparse identification",
+        "Identifying essential parameters and sparse structures in stochastic dynamical systems from noisy observations."
+      ]
+    },
+    {
+      "zh": [
+        "联邦学习与强化学习",
+        "关注分布式数据学习与基于反馈的决策方法。"
+      ],
+      "en": [
+        "Federated & reinforcement learning",
+        "Learning from distributed data and studying feedback-driven decision methods."
+      ]
+    },
+    {
+      "zh": [
+        "数学与人工智能的交叉",
+        "探索学习与估计问题背后的数学理论。"
+      ],
+      "en": [
+        "Mathematics & artificial intelligence",
+        "Exploring the mathematical foundations of learning and estimation."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "id": "ju1",
+      "authors": "D. Gan, S. Xie, Z. Liu, and X. Zhang",
+      "title": "Distributed adaptive estimation for stochastic large regression models",
+      "venue": "submitted to IEEE Transactions on Automatic Control as regular paper , 2025, (under review).",
+      "year": 2025,
+      "status": "review",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Preprint/Underreview",
+      "links": []
+    },
+    {
+      "id": "ju2",
+      "authors": "D. Gan, R. Li, and S. Xie",
+      "title": "Distributed least-squares identification for ARMAX models without SPR condition",
+      "venue": "submitted to SIAM Journal on Control and Optimization , 2026, (under review).",
+      "year": 2026,
+      "status": "review",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Preprint/Underreview",
+      "links": []
+    },
+    {
+      "id": "ju3",
+      "authors": "S. Chen, R. Li, D. Gan*, S. Xie, and X. Hu",
+      "title": "Distributed sparse adaptive estimation over Markov switching topologies",
+      "venue": "Science China Information Sciences , 2026.",
+      "year": 2026,
+      "status": "unspecified",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Preprint/Underreview",
+      "links": []
+    },
+    {
+      "id": "j1",
+      "authors": "D. Gan, R. Yan, S. Chen, and Z. Liu",
+      "title": "Distributed extended SG algorithm for joint identification of system parameters and noise model parameters",
+      "venue": "SIAM Journal on Control and Optimization , vol. 63, no. 1, pp. 650–675, 2025.",
+      "year": 2025,
+      "status": "published",
+      "kind": "journal",
+      "selected": true,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j2",
+      "authors": "D. Gan and Z. Liu",
+      "title": "Distributed order estimation of ARX model under cooperative excitation condition",
+      "venue": "SIAM Journal on Control and Optimization , vol. 60, no. 3, pp. 1519–1545, 2022.",
+      "year": 2022,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j3",
+      "authors": "D. Gan, S. Xie, Z. Liu, and J. Lü",
+      "title": "Stability of FFLS-based diffusion adaptive filter under cooperative excitation condition",
+      "venue": "IEEE Transactions on Automatic Control (Regular paper) , vol. 69, no. 11, pp. 7479–7492, 2024.",
+      "year": 2024,
+      "status": "published",
+      "kind": "journal",
+      "selected": true,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j4",
+      "authors": "D. Gan and Z. Liu",
+      "title": "Distributed sparse identification for stochastic dynamic systems under cooperative non-persistent excitation condition",
+      "venue": "Automatica, vol. 151, p. 110958, 2023.",
+      "year": 2023,
+      "status": "published",
+      "kind": "journal",
+      "selected": true,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j5",
+      "authors": "D. Gan and Z. Liu",
+      "title": "Convergence of the distributed SG algorithm under cooperative excitation condition",
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems , vol. 35, no. 5, pp. 7087–7101, 2024.",
+      "year": 2024,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j6",
+      "authors": "D. Gan, S. Xie, and Z. Liu",
+      "title": "Stability of the distributed Kalman filter using general random coefficients",
+      "venue": "Science China Information Sciences , vol. 64, p. 172204, 2021.",
+      "year": 2021,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j7",
+      "authors": "D. Gan and Z. Liu",
+      "title": "Performance analysis of the compressed distributed least squares algorithm",
+      "venue": "Systems & Control Letters , vol. 164, p. 105228, 2022.",
+      "year": 2022,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j8",
+      "authors": "D. Gan, S. Xie, and R. Li",
+      "title": "Distributed sparse identification in multivariate stochastic regression under colored noise",
+      "venue": "SIAM Journal on Control and Optimization , 2026, (Accepted).",
+      "year": 2026,
+      "status": "accepted",
+      "kind": "journal",
+      "selected": true,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j9",
+      "authors": "D. Gan and Z. Liu",
+      "title": "Distributed online sparse identification for multivariate stochastic regression models",
+      "venue": "Automatica (Regular paper), 2026, (Accepted).",
+      "year": 2026,
+      "status": "accepted",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j10",
+      "authors": "S. Xie, R. Li, and D. Gan*",
+      "title": "Distributed extended least squares algorithm over directed graphs",
+      "venue": "Automatica, vol. 187, p. 112914, 2026.",
+      "year": 2026,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j11",
+      "authors": "S. Xie, S. Zhang, Z. Wang, and D. Gan*",
+      "title": "Compressed least squares algorithm of continuous-time linear stochastic regression model using sampling data",
+      "venue": "Journal of Systems Science and Complexity , vol. 37, no. 4, pp. 1488–1506, 2024.",
+      "year": 2024,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j12",
+      "authors": "S. Xie, D. Gan*, and Z. Liu",
+      "title": "Stability analysis of distributed Kalman filtering algorithm for stochastic regression model",
+      "venue": "Control Theory and Technology, vol. 23, pp. 161–175, 2025.",
+      "year": 2025,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j13",
+      "authors": "S. Xie, D. Gan*, and Z. Liu",
+      "title": "Two-layer diffusion adaptive filters over directed Markovian switching networks",
+      "venue": "IEEE Control Systems Letters (with IEEE ACC 2024) , vol. 7, pp. 3501–3506, 2023.",
+      "year": 2023,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j14",
+      "authors": "R. Li, D. Gan, S. Xie, H. Gu, and J. Lü",
+      "title": "Analysis of the compressed distributed Kalman filter over Markovian switching topology",
+      "venue": "IEEE Transactions on Cybernetics, vol. 55, no. 3, pp. 1372–1384, 2025.",
+      "year": 2025,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j15",
+      "authors": "R. Li, D. Gan, S. Xie, and J. Lü",
+      "title": "Stability and performance analysis of the compressed Kalman filter algorithm for sparse stochastic systems",
+      "venue": "Science China Technological Sciences, vol. 67, no. 2, pp. 380–394, 2024.",
+      "year": 2024,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j16",
+      "authors": "R. Li, D. Gan, H. Gu, and J. Lü",
+      "title": "Distributed state estimation for sparse stochastic systems based on compressed sensing",
+      "venue": "IEEE Transactions on Circuits and Systems II: Express Briefs , vol. 71, no. 8, pp. 3840–3844, 2024.",
+      "year": 2024,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j17",
+      "authors": "S. Chen, D. Gan, S. Xie, and J. Lü",
+      "title": "Privacy-preserving distributed adaptive estimation for non-stationary regression data",
+      "venue": "Systems & Control Letters , vol. 203, p. 106147, 2025.",
+      "year": 2025,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j18",
+      "authors": "X. Zhu, D. Gan, and Z. Liu",
+      "title": "Distributed least squares algorithm of continuous-time stochastic regression model based on sampled data",
+      "venue": "Journal of Systems Science and Complexity , vol. 37, no. 2, pp. 609–628, 2024.",
+      "year": 2024,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j19",
+      "authors": "X. Zhu, D. Gan, and Z. Liu",
+      "title": "Performance analysis of least squares of continuous-time model based on sampling data",
+      "venue": "IEEE Control Systems Letters , vol. 6, pp. 3086–3091, 2022.",
+      "year": 2022,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j20",
+      "authors": "R. Li, G. Chen, D. Gan, H. Gu, and J. Lü",
+      "title": "Stackelberg and Nash equilibrium computation in non-convex leader-follower network aggregative games",
+      "venue": "IEEE Transactions on Circuits and Systems I: Regular Papers , vol. 71, no. 2, pp. 898–909, 2024.",
+      "year": 2024,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j21",
+      "authors": "S. Xie, Y. Xu, S. Luo, C. Peng, D. Gan, and R. Lin",
+      "title": "Collaborative spectrum sensing based on distributed adaptive filtering",
+      "venue": "IEEE Open Journal of the Communications Society , vol. 6, pp. 6666–6681, 2025.",
+      "year": 2025,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "j22",
+      "authors": "F. Wang, D. Gan, and N. Liu",
+      "title": "A study on impact of leniency on sentencing for suspects admitting guilt & accepting punishments: Based on data of misdemeanor crime of intentional injury",
+      "venue": "Journal of Shandong University (Philosophy and Social Sciences) , vol. 50, no. 3, pp. 65–77, 2022.",
+      "year": 2022,
+      "status": "published",
+      "kind": "journal",
+      "selected": false,
+      "source_section": "Journal Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "cu1",
+      "authors": "D. Gan, S. Xie, Y. Li, and L. Cheng",
+      "title": "Online adaptive estimation for stochastic large regression models under colored noise",
+      "venue": "in Proceedings of the 15th Asian Control Conference , (under review), Bali, Indonesia, 2026.",
+      "year": 2026,
+      "status": "review",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Preprint/Underreview",
+      "links": []
+    },
+    {
+      "id": "c1",
+      "authors": "D. Gan, Y. Xu, and S. Xie",
+      "title": "Distributed adaptive identification for stochastic large models with infinite unknown parameters",
+      "venue": "in Proceedings of the 44th Chinese Control Conference , Chongqing, China, Jul. 2025, pp. 1392–1397.",
+      "year": 2025,
+      "status": "published",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c2",
+      "authors": "D. Gan and Z. Liu",
+      "title": "On the stability of Kalman filter with random coefficients",
+      "venue": "in IFAC-PapersOnLine, ser. Proceedings of the 21st IFAC World Congress, vol. 53, 2020, pp. 2397–2402.",
+      "year": 2020,
+      "status": "published",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c3",
+      "authors": "D. Gan and Z. Liu",
+      "title": "Strong consistency of the distributed stochastic gradient algorithm",
+      "venue": "in Proceedings of IEEE 58th Conference on Decision and Control , Nice, France, Dec. 2019, pp. 5082–5087.",
+      "year": 2019,
+      "status": "published",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c4",
+      "authors": "D. Gan, S. Chen, N. Liu, et al.",
+      "title": "Accurate performance analysis of distributed adaptive differential privacy estimation",
+      "venue": "in Proceedings of IEEE 64th Conference on Decision and Control , Rio de Janeiro, Brazil, Dec. 2025, pp. 7920–7925.",
+      "year": 2025,
+      "status": "published",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c5",
+      "authors": "D. Gan and R. Li",
+      "title": "Logarithmic regret bound for distributed adaptive sparse estimation without excitation condition",
+      "venue": "in IFAC-PapersOnLine, ser. The 15th International Workshop on Adaptive and Learning Control Systems, vol. 59, 2025, pp. 226–231.",
+      "year": 2025,
+      "status": "published",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c6",
+      "authors": "D. Gan, X. Ji, and Y. Wang",
+      "title": "Least-squares estimation for large ARMAX models with infinite unknown parameters",
+      "venue": "in Proceedings of the 45th Chinese Control Conference , (Accepted), Nanjing, China, 2026.",
+      "year": 2026,
+      "status": "accepted",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c7",
+      "authors": "S. Chen, D. Gan*, K. Liu, and J. Lü",
+      "title": "Stability of compressed recursive least squares with forgetting factor algorithm",
+      "venue": "in IFAC-PapersOnLine, ser. Proceedings of the 22nd IFAC World Congress, vol. 56, 2023, pp. 10240–10245.",
+      "year": 2023,
+      "status": "published",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c8",
+      "authors": "S. Chen, D. Gan*, S. Xie, and J. Lü",
+      "title": "Tracking bound of compressed distributed recursive least squares with forgetting factor",
+      "venue": "in Proceedings of 14th Asian Control Conference , Dalian, China, 2024, pp. 2434–2439.",
+      "year": 2024,
+      "status": "published",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c9",
+      "authors": "H. Li and D. Gan*",
+      "title": "Stability of privacy-preserving diffusion NLMS algorithm under non-stationary regression data",
+      "venue": "in Proceedings of the 45th Chinese Control Conference , (Accepted), Nanjing, China, 2026.",
+      "year": 2026,
+      "status": "accepted",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c10",
+      "authors": "Y. Wang,D. Gan, Y. Zhao, and K. H. Johansson",
+      "title": "Distributed estimation of stochastic large models with binary-valued measurements",
+      "venue": "in Proceedings of the 23rd IFAC World Congress, (Accepted), Busan, Korea, 2026.",
+      "year": 2026,
+      "status": "accepted",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    },
+    {
+      "id": "c11",
+      "authors": "Y. Ren,D. Gan, Y. Li,et al.",
+      "title": "Identification of stochastic dynamical systems with infinite parameters based on L1−regularization",
+      "venue": "in Proceedings of the 23rd IFAC World Congress, (Accepted), Busan, Korea, 2026.",
+      "year": 2026,
+      "status": "accepted",
+      "kind": "conference",
+      "selected": false,
+      "source_section": "Conference Published or Accepted",
+      "links": []
+    }
+  ],
+  "projects": [
+    {
+      "date": "2027.01–2029.12",
+      "zh": "国家自然科学基金青年科学基金项目（C 类）",
+      "en": "National Natural Science Foundation of China, Young Investigator Project (Category C)",
+      "role": {
+        "zh": "主持",
+        "en": "PI"
+      }
+    },
+    {
+      "date": "2026.06–2031.01",
+      "zh": "复旦大学人才引进科研启动经费",
+      "en": "Startup Research Funding for Talent Recruitment, Fudan University",
+      "role": {
+        "zh": "主持",
+        "en": "PI"
+      }
+    },
+    {
+      "date": "2025.10–2026.10",
+      "zh": "自主智能无人系统全国重点实验室开放课题",
+      "en": "Open Project of National Key Laboratory of Autonomous Intelligent Unmanned Systems",
+      "role": {
+        "zh": "主持",
+        "en": "PI"
+      }
+    },
+    {
+      "date": "2025.10–2026.09",
+      "zh": "天津市自然科学基金青年项目 B 类",
+      "en": "Tianjin Natural Science Foundation Youth Program B",
+      "role": {
+        "zh": "主持",
+        "en": "PI"
+      }
+    },
+    {
+      "date": "2023.07–2024.07",
+      "zh": "中国博士后科学基金特别资助",
+      "en": "China Postdoctoral Science Foundation (Special Funding)",
+      "role": {
+        "zh": "主持",
+        "en": "PI"
+      }
+    },
+    {
+      "date": "2022.12–2024.07",
+      "zh": "中国博士后科学基金面上资助",
+      "en": "China Postdoctoral Science Foundation (General Funding Program)",
+      "role": {
+        "zh": "主持",
+        "en": "PI"
+      }
+    },
+    {
+      "date": "2021.01–2022.06",
+      "zh": "复杂系统研究研究生基金",
+      "en": "Graduate Student Fund for Complex Systems Research",
+      "role": {
+        "zh": "主持",
+        "en": "PI"
+      }
+    }
+  ],
+  "work": [
+    {
+      "date": "2026.06–",
+      "zh": "复旦大学数学科学学院 · 研究员（Assistant Professor A）",
+      "en": "Assistant Professor A (Researcher), School of Mathematical Sciences, Fudan University"
+    },
+    {
+      "date": "2024.08–2026.05",
+      "zh": "南开大学人工智能学院 · 副教授",
+      "en": "Associate Professor, College of Artificial Intelligence, Nankai University"
+    },
+    {
+      "date": "2022.07–2024.08",
+      "zh": "中关村实验室 · 博士后",
+      "en": "Postdoctoral Fellow, Zhongguancun Laboratory"
+    }
+  ],
+  "education": [
+    {
+      "date": "2017.09–2022.06",
+      "zh": "中国科学院数学与系统科学研究院 · 系统理论博士",
+      "en": "Ph.D., System Theory, Academy of Mathematics and Systems Science, Chinese Academy of Sciences"
+    },
+    {
+      "date": "2013.09–2017.06",
+      "zh": "山东大学数学学院（华罗庚班）· 数学与应用数学学士",
+      "en": "B.Sc., Mathematics and Applied Mathematics, School of Mathematics (Luogeng-Hua Class), Shandong University"
+    },
+    {
+      "date": "2016.06–2017.05",
+      "zh": "中国科学院大学数学科学学院 · 访问学生",
+      "en": "Visiting Student, School of Mathematics, University of Chinese Academy of Sciences"
+    }
+  ],
+  "teaching": [
+    {
+      "date": "2026.09–",
+      "zh": "线性代数习题课 · 复旦大学数学科学学院 · 本科生",
+      "en": "Linear Algebra Exercises Tutorial · School of Mathematical Sciences, Fudan University · Undergraduate"
+    },
+    {
+      "date": "2025.09–2026.01",
+      "zh": "线性代数 · 南开大学人工智能学院 · 本科生",
+      "en": "Linear Algebra · College of Artificial Intelligence, Nankai University · Undergraduate"
+    },
+    {
+      "date": "2019.09–2020.07",
+      "zh": "线性代数习题课 · 中国科学院大学数学科学学院 · 本科生",
+      "en": "Linear Algebra Exercises Tutorial · School of Mathematical Sciences, University of Chinese Academy of Sciences · Undergraduate"
+    }
+  ],
+  "honors": [
+    {
+      "date": "2026",
+      "zh": "中国工业与应用数学学会（CSIAM）青年人才托举工程",
+      "en": "CSIAM Young Talent Support Program"
+    },
+    {
+      "date": "2025–2026",
+      "zh": "IEEE Control Systems Letters 优秀审稿人",
+      "en": "Outstanding Reviewer, IEEE Control Systems Letters"
+    },
+    {
+      "date": "2025.09",
+      "zh": "“高教社杯”全国大学生数学建模竞赛全国一等奖 · 指导教师",
+      "en": "National First Prize, CUMCM · Supervisor"
+    },
+    {
+      "date": "2025.07",
+      "zh": "第 44 届中国控制会议关肇直奖 · 第一作者",
+      "en": "Guan Zhaozhi Award, 44th Chinese Control Conference · First author"
+    },
+    {
+      "date": "2023.11",
+      "zh": "首届北京数学会优秀青年论文奖 · 第一作者",
+      "en": "First Beijing Mathematical Society Excellent Young Paper Award · First author"
+    },
+    {
+      "date": "2022.07",
+      "zh": "北京市优秀博士毕业生",
+      "en": "Beijing Outstanding Doctoral Graduate"
+    },
+    {
+      "date": "2022.06",
+      "zh": "中国科学院大学优秀毕业生",
+      "en": "Outstanding Graduate, University of Chinese Academy of Sciences"
+    },
+    {
+      "date": "2021.05",
+      "zh": "第五届中国系统科学大会最佳张贴论文奖 · 第一作者",
+      "en": "Best Poster Paper Award, 5th Systems Science Conference of China · First author"
+    },
+    {
+      "date": "2021.04",
+      "zh": "中国科学院大学三好学生标兵（前 1%）",
+      "en": "Merit Student Exemplar, University of Chinese Academy of Sciences (Top 1%)"
+    },
+    {
+      "date": "2020.12",
+      "zh": "博士研究生国家奖学金",
+      "en": "National Scholarship (Doctoral)"
+    },
+    {
+      "date": "2019.12",
+      "zh": "IEEE CSS CDC 学生差旅奖 · 第一作者",
+      "en": "IEEE CSS Student Travel Award of CDC · First author"
+    },
+    {
+      "date": "2016.12",
+      "zh": "本科生国家奖学金",
+      "en": "National Scholarship (Undergraduate)"
+    }
+  ],
+  "service": [
+    {
+      "date": "2026",
+      "zh": "第 15 届亚洲控制会议（ASCC 2026）· Associate Editor；Chair",
+      "en": "Associate Editor; Chair, 15th Asian Control Conference (ASCC 2026)"
+    },
+    {
+      "date": "2025–",
+      "zh": "Control Theory and Technology 青年编委",
+      "en": "Young Editorial Board Member, Control Theory and Technology"
+    },
+    {
+      "date": "2025–",
+      "zh": "亚洲控制协会（ACA）网络与通信系统技术委员会委员",
+      "en": "Member, Technical Committee on Networks and Communication Systems, Asian Control Association"
+    },
+    {
+      "date": "2025–",
+      "zh": "中国工业与应用数学学会大数据与人工智能专业委员会委员",
+      "en": "Committee Member, Big Data and Artificial Intelligence Technical Committee, CSIAM"
+    },
+    {
+      "date": "2025–",
+      "zh": "中国指挥与控制学会具身智能专业委员会委员",
+      "en": "Committee Member, Embodied Intelligence Technical Committee, CICC"
+    },
+    {
+      "date": "2025–",
+      "zh": "中国自动化学会控制理论专业委员会随机系统控制学组成员",
+      "en": "Member, Stochastic Systems Control Subcommittee, TCCT, CAA"
+    },
+    {
+      "date": "2025–",
+      "zh": "Mathematical Reviews 评论员",
+      "en": "Reviewer, Mathematical Reviews"
+    },
+    {
+      "date": "2023",
+      "zh": "第 42 届中国控制会议（CCC 2023）· (co)Chair",
+      "en": " (Co)Chair, 42nd Chinese Control Conference (CCC 2023)"
+    },
+    {
+      "date": "2022–",
+      "zh": "期刊与会议审稿：SIAM Journal on Control and Optimization、Automatica、IEEE Transactions 系列、Science China Information Sciences 等",
+      "en": "Peer reviewer: SIAM Journal on Control and Optimization, Automatica, various IEEE Transactions, Science China Information Sciences, and other journals/conferences"
+    }
+  ],
+  "patents": [
+    {
+      "date": "2025.08",
+      "text": "D. Gan , X. Zhang, Y. Ni, X. Guo, A Robot Cooperative Positioning Method Based on Adaptive Estimation of Infinite-Dimensional Parameter Models, Patent for Invention (Granted), ZL202510706115.0"
+    },
+    {
+      "date": "2025.07",
+      "text": "D. Gan, C. Zhao, S. Chen, X. Guo, Y. Ni, An On-Orbit Cooperative Positioning Method and System for Spacecraft, Patent for Invention (Granted), ZL202511020603.2"
+    },
+    {
+      "date": "2024.02",
+      "text": "Y. Tao, J. Lü, S. Tan,D. Gan, A Secure and Robust Indoor Pedestrian Trajectory Tracking Method and System, Patent for Invention (Granted), ZL202410038094.5"
+    },
+    {
+      "date": "2023.11",
+      "text": "D. Gan , S. Chen, J. Lü, Y. Tao, A Distributed Compressed Sensing-Based Sparse Time-Varying Channel Estimation Method, Patent for Invention (Granted), ZL202311566816.6"
+    },
+    {
+      "date": "2023.08",
+      "text": "D. Gan , Z. Liu, J. Lü, A Distributed Adaptive Cooperative Tracking and Positioning Method, Patent for Invention (Granted), ZL202310581146.9"
+    },
+    {
+      "date": "2025.09",
+      "text": "D. Gan, R. Li, C. Zhao, A Flight Parameter Identification Method for Multi-Aircraft Systems, Patent for Invention (Under Examination), Application No.: 202511417550.8"
+    }
+  ],
+  "photo": "",
+  "mentoring": {
+    "zh": "2025 年全国大学生数学建模竞赛全国一等奖 · 指导教师",
+    "en": "National First Prize, 2025 China Undergraduate Mathematical Contest in Modeling · Supervisor"
+  }
+}

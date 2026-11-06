@@ -1,101 +1,83 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# 甘叠 / Die Gan · Academic Website
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+中英双语数学与控制方向学术主页。白底、深蓝配色，以简洁的教师主页结构组织研究、论文、教学和经历。设计参考 al-folio 的视觉层次、Yang Zheng 的栏目结构与 Stephen Tu 的论文分类，使用独立编写的静态生成器实现，并非安装了上述模板。
 
-# Getting Started
+## 我只想修改内容
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Edit site-wide configuration in `_config.yml` and double check that the `url` is the one that you just selected in the previous step and that `repository` reflects the correct path for your repository.
-1. Add your site content, upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+部署完成后，日常修改只需要登录 GitHub：
 
-See more info at https://academicpages.github.io/
+1. 打开此仓库，点击 **content.json**。
+2. 点击文件右上方的铅笔按钮 **Edit this file**。
+3. 找到需要修改的中文或英文文字。`zh` 是中文，`en` 是英文。只修改引号内的文字，保留逗号、括号和英文双引号。
+4. 点击 **Commit changes…**，填写简短说明（例如“更新课程信息”），保存到 `master`。
+5. 点击仓库的 **Actions**，等待最新的 **Build and deploy academic website** 出现绿色对勾，网站便会自动更新。不需要在电脑安装 Python、运行代码或重复上传网页。
+6. 若出现红叉，原来成功发布的网站仍可访问；打开失败记录查看提示，通常是 JSON 标点错误。可以联系协作者修复或恢复到上一版，不必删除仓库。
 
-### Additional Tutorials
+网站为公开的静态页面。GitHub 登录用于管理源文件，不是在主页里登录。首次账号连接和部署需完成后才能使用以上更新方式。
 
-Additional tutorials for working with the Academic Pages template can be found at the following sites:
-- https://jayrobwilliams.com/posts/2020/06/academic-website/
+## 内容在哪里
 
-## Running locally
+| 内容 | content.json 中的字段 |
+|---|---|
+| 姓名、职称、单位、简介、邮箱 | name、role、affiliation、bio、email |
+| 个人照片 | photo |
+| 四个研究主题 | research |
+| 全部论文 | publications |
+| 主持或参与项目 | projects 中的 role |
+| 课程与指导成果 | teaching、mentoring |
+| 工作、教育经历 | work、education |
+| 学术服务、荣誉 | service、honors |
+| 专利 | patents |
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+### 更新论文
 
-1. Clone the repository and made updates as detailed above.
+`publications` 内每一组花括号是一篇论文。新增论文可以复制一组并修改，确保 `id` 不重复。
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distributions and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try running `sudo apt install ruby-dev ruby-bundler nodejs` again.
+- `authors`：按论文原始作者顺序填写，星号只用于明确的通讯作者标记。
+- `title`：正式论文题名。
+- `venue`：期刊/会议名称、卷期页码、年份等完整信息。更新状态时也应同步修改这里的 Accepted 或 under review 等文字。
+- `year`：数字年份。页面在每个状态分组内自动按年份倒序。
+- `status`：`published`（已发表）、`accepted`（已录用）、`review`（在审）、`unspecified`（预印本/在审栏目内，确切状态未注明）。
+- `kind`：`journal`（期刊）或 `conference`（会议）。
+- `selected`：`true` 会在首页代表论文中展示，`false` 只在完整列表展示。建议首页保持 4–6 篇。
+- `links`：仅添加已核实的链接。例如 `[{"label":"DOI","url":"https://doi.org/实际的DOI"}]`；没有链接则保留 `[]`。
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+### 添加或更换照片
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+1. 在仓库中打开 `assets` 文件夹，选择 **Add file → Upload files** 上传希望公开的照片，例如 `portrait.jpg`。
+2. 将 content.json 中 `"photo": ""` 改为 `"photo": "assets/portrait.jpg"`。
+3. 保存后网站自动生成照片区。留空时不显示照片，也不显示占位框。
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stopping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+## 页面结构
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+- `index.html` / `index-en.html`：简介、研究主题、代表论文。
+- `publications.html` / `publications-en.html`：论文完整列表、状态分类、搜索筛选、专利。
+- `projects.html` / `projects-en.html`：项目及角色。
+- `teaching.html` / `teaching-en.html`：教学与指导。
+- `experience.html` / `experience-en.html`：教育与工作经历。
+- `service.html` / `service-en.html`：服务与荣誉。
 
-## Using Docker
+两种语言始终切换到对应页面。内容在 HTML 内，关闭 JavaScript 仍能阅读全部论文。
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+## 首次部署设置（交接或迁移时使用）
 
-You can build and execute the container by running the following command in the repository:
+完整仓库需包含 `content.json`、`build.py`、`validate.py`、`assets/` 和 `.github/workflows/pages.yml`。不要只上传压缩包文件本身。
 
-```bash
-chmod -R 777 .
-docker compose up
-```
+1. 在自己的 GitHub 账号创建公开仓库。若希望使用 `https://用户名.github.io/`，仓库命名为 `用户名.github.io`；普通仓库名会产生带仓库名的子路径。
+2. 上传上述源码文件，包括隐藏目录 `.github`。不要上传原始简历和本地审阅记录。
+3. 打开 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。
+4. 打开 **Actions → Build and deploy academic website → Run workflow**，选择 `master` 运行一次。
+5. 等待成功，回到 **Settings → Pages** 查看发布网址。以后修改内容自动发布。
 
-You should now be able to access the website from `localhost:4000`.
+官方文档：[自定义 GitHub Pages 工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
 
-### Using the DevContainer in VS Code
+## 本地预览（可选）
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+有 Python 3 时运行 `python build.py`，再运行 `python validate.py`。打开 `dist/index.html` 即可离线查看。
 
-# Maintenance
+本项目没有第三方 Python 依赖、广告、跟踪器或外部字体。Pages 只发布 `dist` 内的网页资源。仓库中的源码和 content.json 也会随公开仓库被他人查看，请勿填写私人信息。
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## 内容与设计说明
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii), and additional maintainers would be welcome.
+个人事实依据为所提供的简历，不根据时间推断论文发表、项目结题或招生名额。简历未包含的 DOI、代码和学术平台链接未填入。页面不包含原始简历、电话及详细街道地址。代表论文是可调整的展示选择，不表示新增作者贡献或学术评价。
 
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of the template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize, although [rebasing](https://git-scm.com/docs/git-rebase) the changes from this template will work along with manually [cherry picking](https://git-scm.com/docs/git-cherry-pick) the relevant commits. If you are not comfortable with the Git command line, you can save your various `.yml` configuration files and Markdown files, delete the repository, and fork it again. 
-
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
