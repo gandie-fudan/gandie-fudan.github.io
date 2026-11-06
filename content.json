@@ -116,10 +116,15 @@
       "source_section": "Journal Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1137/24m1643621"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:zYLM7Y9cAGgC"
         }
-      ]
+      ],
+      "publisher_url": "https://epubs.siam.org/doi/10.1137/24M1643621"
     },
     {
       "id": "j2",
@@ -133,10 +138,15 @@
       "source_section": "Journal Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1137/21m1421362"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:9yKSN-GCB0IC"
         }
-      ]
+      ],
+      "publisher_url": "https://epubs.siam.org/doi/10.1137/21M1421362"
     },
     {
       "id": "j3",
@@ -150,10 +160,15 @@
       "source_section": "Journal Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/tac.2024.3388128"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:_FxGoFyzp5QC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/10497836/"
     },
     {
       "id": "j4",
@@ -167,10 +182,15 @@
       "source_section": "Journal Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.automatica.2023.110958"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:d1gkVwhDpl0C"
         }
-      ]
+      ],
+      "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0005109823001103"
     },
     {
       "id": "j5",
@@ -184,10 +204,15 @@
       "source_section": "Journal Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/tnnls.2022.3213715"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:Se3iqnhoufwC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/9927354/"
     },
     {
       "id": "j6",
@@ -201,10 +226,15 @@
       "source_section": "Journal Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1007/s11432-020-2962-9"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:Y0pCki6q_DkC"
         }
-      ]
+      ],
+      "publisher_url": "https://link.springer.com/10.1007/s11432-020-2962-9"
     },
     {
       "id": "j7",
@@ -225,7 +255,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:UebtZRa9Y70C"
         }
-      ]
+      ],
+      "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0167691122000615"
     },
     {
       "id": "j8",
@@ -246,7 +277,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:Zph67rFs4hoC"
         }
-      ]
+      ],
+      "publisher_url": "https://epubs.siam.org/doi/10.1137/25M1790567"
     },
     {
       "id": "j9",
@@ -267,7 +299,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:KlAtU1dfN6UC"
         }
-      ]
+      ],
+      "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0005109826003511"
     },
     {
       "id": "j10",
@@ -288,7 +321,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:3fE2CSJIrl8C"
         }
-      ]
+      ],
+      "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0005109826000981"
     },
     {
       "id": "j11",
@@ -309,7 +343,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:qjMakFHDy7sC"
         }
-      ]
+      ],
+      "publisher_url": "https://link.springer.com/10.1007/s11424-024-3297-7"
     },
     {
       "id": "j12",
@@ -330,7 +365,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:roLk4NBRz8UC"
         }
-      ]
+      ],
+      "publisher_url": "https://link.springer.com/10.1007/s11768-025-00253-x"
     },
     {
       "id": "j13",
@@ -351,7 +387,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:YsMSGLbcyi4C"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/10323119/"
     },
     {
       "id": "j14",
@@ -372,7 +409,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:Tyk-4Ss8FVUC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/10804850/"
     },
     {
       "id": "j15",
@@ -386,10 +424,15 @@
       "source_section": "Journal Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1007/s11431-023-2514-6"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:WF5omc3nYNoC"
         }
-      ]
+      ],
+      "publisher_url": "https://link.springer.com/10.1007/s11431-023-2514-6"
     },
     {
       "id": "j16",
@@ -410,7 +453,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:UeHWp8X0CEIC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/10457852/"
     },
     {
       "id": "j17",
@@ -431,7 +475,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:eQOLeE2rZwMC"
         }
-      ]
+      ],
+      "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S016769112500129X"
     },
     {
       "id": "j18",
@@ -452,7 +497,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:W7OEmFMy1HYC"
         }
-      ]
+      ],
+      "publisher_url": "https://link.springer.com/10.1007/s11424-024-3016-4"
     },
     {
       "id": "j19",
@@ -466,10 +512,15 @@
       "source_section": "Journal Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/lcsys.2022.3182040"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:u-x6o8ySG0sC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/9794311/"
     },
     {
       "id": "j20",
@@ -490,7 +541,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:2osOgNQ5qMEC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/10360327/"
     },
     {
       "id": "j21",
@@ -511,7 +563,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:0EnyYjriUFMC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/11123586/"
     },
     {
       "id": "j22",
@@ -528,7 +581,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:hqOjcs7Dif8C"
         }
-      ]
+      ],
+      "publisher_url": "https://www.journal.sdu.edu.cn/info/1247/2194.htm"
     },
     {
       "id": "cu1",
@@ -549,7 +603,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:ULOm3_A8WrAC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/11702306/"
     },
     {
       "id": "c1",
@@ -563,10 +618,15 @@
       "source_section": "Conference Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.23919/ccc64809.2025.11178709"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:5nxA0vEk-isC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/11178709/"
     },
     {
       "id": "c2",
@@ -580,10 +640,15 @@
       "source_section": "Conference Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.ifacol.2020.12.2514"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:IjCSPb-OGe4C"
         }
-      ]
+      ],
+      "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2405896320332596"
     },
     {
       "id": "c3",
@@ -597,10 +662,15 @@
       "source_section": "Conference Published or Accepted",
       "links": [
         {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/cdc40024.2019.9029442"
+        },
+        {
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:u5HHmVD_uO8C"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/9029442/"
     },
     {
       "id": "c4",
@@ -621,7 +691,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:MXK_kJrjxJIC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/11312413/"
     },
     {
       "id": "c5",
@@ -642,7 +713,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:8k81kl-MbHgC"
         }
-      ]
+      ],
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S2405896325028447"
     },
     {
       "id": "c6",
@@ -675,7 +747,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:ufrVoPGSRksC"
         }
-      ]
+      ],
+      "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2405896323012880"
     },
     {
       "id": "c8",
@@ -692,7 +765,8 @@
           "label": "Google Scholar",
           "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:LkGwnXOMwfcC"
         }
-      ]
+      ],
+      "publisher_url": "https://ieeexplore.ieee.org/document/10665367"
     },
     {
       "id": "c9",
@@ -1029,7 +1103,7 @@
       "text": "D. Gan, R. Li, C. Zhao, A Flight Parameter Identification Method for Multi-Aircraft Systems, Patent for Invention (Under Examination), Application No.: 202511417550.8"
     }
   ],
-  "photo": "",
+  "photo": "assets/portrait.png",
   "mentoring": {
     "zh": "2025 年全国大学生数学建模竞赛全国一等奖 · 指导教师",
     "en": "National First Prize, 2025 China Undergraduate Mathematical Contest in Modeling · Supervisor"
@@ -1076,6 +1150,19 @@
           "How can online model updates inform control, with analysis of estimation and stability in closed loop?"
         ]
       }
+    ]
+  },
+  "biography_background": {
+    "zh": "2017 年获山东大学数学与应用数学学士学位，2022 年获中国科学院数学与系统科学研究院系统理论博士学位。2022 至 2024 年在中关村实验室从事博士后研究，2024 至 2026 年任南开大学人工智能学院副教授。",
+    "en": "I received my B.Sc. in Mathematics and Applied Mathematics from Shandong University in 2017 and my Ph.D. from the Academy of Mathematics and Systems Science, Chinese Academy of Sciences, in 2022. I was a Postdoctoral Fellow at Zhongguancun Laboratory from 2022 to 2024 and an Associate Professor at Nankai University from 2024 to 2026."
+  },
+  "bio_emphasis": {
+    "zh": [
+      "随机系统的自适应辨识与控制",
+      "CSIAM人才托举工程"
+    ],
+    "en": [
+      "adaptive identification and control of stochastic systems"
     ]
   }
 }
