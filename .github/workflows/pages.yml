@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: pages
+  group: academic-site-deploy
   cancel-in-progress: false
 jobs:
   build:
@@ -25,12 +25,19 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
+      contents: read
+      actions: read
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v6
+      - name: Wait for any legacy Pages publish to finish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 wait_legacy.py
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
