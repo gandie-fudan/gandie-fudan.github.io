@@ -63,13 +63,22 @@
       "id": "ju1",
       "authors": "D. Gan, S. Xie, Z. Liu, and X. Zhang",
       "title": "Distributed adaptive estimation for stochastic large regression models",
-      "venue": "submitted to IEEE Transactions on Automatic Control as regular paper , 2025, (under review).",
+      "venue": "Submitted to IEEE Transactions on Automatic Control in 2025 (under review in the supplied CV); arXiv:2604.25468, 2026.",
       "year": 2025,
       "status": "review",
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Preprint/Underreview",
-      "links": []
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2604.25468"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:kNdYIx-mwKoC"
+        }
+      ]
     },
     {
       "id": "ju2",
@@ -98,14 +107,19 @@
     {
       "id": "j1",
       "authors": "D. Gan, R. Yan, S. Chen, and Z. Liu",
-      "title": "Distributed extended SG algorithm for joint identification of system parameters and noise model parameters",
+      "title": "Distributed extended stochastic gradient algorithm for joint identification of system parameters and noise model parameters",
       "venue": "SIAM Journal on Control and Optimization , vol. 63, no. 1, pp. 650–675, 2025.",
       "year": 2025,
       "status": "published",
       "kind": "journal",
       "selected": true,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:zYLM7Y9cAGgC"
+        }
+      ]
     },
     {
       "id": "j2",
@@ -117,7 +131,12 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:9yKSN-GCB0IC"
+        }
+      ]
     },
     {
       "id": "j3",
@@ -129,7 +148,12 @@
       "kind": "journal",
       "selected": true,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:_FxGoFyzp5QC"
+        }
+      ]
     },
     {
       "id": "j4",
@@ -141,7 +165,12 @@
       "kind": "journal",
       "selected": true,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:d1gkVwhDpl0C"
+        }
+      ]
     },
     {
       "id": "j5",
@@ -153,7 +182,12 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:Se3iqnhoufwC"
+        }
+      ]
     },
     {
       "id": "j6",
@@ -165,7 +199,12 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:Y0pCki6q_DkC"
+        }
+      ]
     },
     {
       "id": "j7",
@@ -177,43 +216,79 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.sysconle.2022.105228"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:UebtZRa9Y70C"
+        }
+      ]
     },
     {
       "id": "j8",
       "authors": "D. Gan, S. Xie, and R. Li",
-      "title": "Distributed sparse identification in multivariate stochastic regression under colored noise",
-      "venue": "SIAM Journal on Control and Optimization , 2026, (Accepted).",
+      "title": "Distributed Sparse Identification in Multivariate Stochastic Regression Model under Colored Noise",
+      "venue": "SIAM Journal on Control and Optimization, vol. 64, no. 4, pp. 2641–2670, 2026.",
       "year": 2026,
-      "status": "accepted",
+      "status": "published",
       "kind": "journal",
       "selected": true,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1137/25m1790567"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:Zph67rFs4hoC"
+        }
+      ]
     },
     {
       "id": "j9",
       "authors": "D. Gan and Z. Liu",
       "title": "Distributed online sparse identification for multivariate stochastic regression models",
-      "venue": "Automatica (Regular paper), 2026, (Accepted).",
+      "venue": "Automatica, vol. 192, p. 113167, 2026.",
       "year": 2026,
-      "status": "accepted",
+      "status": "published",
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.automatica.2026.113167"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:KlAtU1dfN6UC"
+        }
+      ]
     },
     {
       "id": "j10",
       "authors": "S. Xie, R. Li, and D. Gan*",
-      "title": "Distributed extended least squares algorithm over directed graphs",
+      "title": "Distributed extended least squares algorithm for ARMAX models over directed networks",
       "venue": "Automatica, vol. 187, p. 112914, 2026.",
       "year": 2026,
       "status": "published",
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.automatica.2026.112914"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:3fE2CSJIrl8C"
+        }
+      ]
     },
     {
       "id": "j11",
@@ -225,7 +300,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1007/s11424-024-3297-7"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:qjMakFHDy7sC"
+        }
+      ]
     },
     {
       "id": "j12",
@@ -237,7 +321,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1007/s11768-025-00253-x"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:roLk4NBRz8UC"
+        }
+      ]
     },
     {
       "id": "j13",
@@ -249,7 +342,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/lcsys.2023.3334548"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:YsMSGLbcyi4C"
+        }
+      ]
     },
     {
       "id": "j14",
@@ -261,7 +363,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/tcyb.2024.3507275"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:Tyk-4Ss8FVUC"
+        }
+      ]
     },
     {
       "id": "j15",
@@ -273,7 +384,12 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:WF5omc3nYNoC"
+        }
+      ]
     },
     {
       "id": "j16",
@@ -285,7 +401,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/tcsii.2024.3372020"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:UeHWp8X0CEIC"
+        }
+      ]
     },
     {
       "id": "j17",
@@ -297,7 +422,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.sysconle.2025.106147"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:eQOLeE2rZwMC"
+        }
+      ]
     },
     {
       "id": "j18",
@@ -309,7 +443,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1007/s11424-024-3016-4"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:W7OEmFMy1HYC"
+        }
+      ]
     },
     {
       "id": "j19",
@@ -321,7 +464,12 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:u-x6o8ySG0sC"
+        }
+      ]
     },
     {
       "id": "j20",
@@ -333,7 +481,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/tcsi.2023.3339753"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:2osOgNQ5qMEC"
+        }
+      ]
     },
     {
       "id": "j21",
@@ -345,7 +502,16 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/ojcoms.2025.3598090"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:0EnyYjriUFMC"
+        }
+      ]
     },
     {
       "id": "j22",
@@ -357,19 +523,33 @@
       "kind": "journal",
       "selected": false,
       "source_section": "Journal Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:hqOjcs7Dif8C"
+        }
+      ]
     },
     {
       "id": "cu1",
       "authors": "D. Gan, S. Xie, Y. Li, and L. Cheng",
       "title": "Online adaptive estimation for stochastic large regression models under colored noise",
-      "venue": "in Proceedings of the 15th Asian Control Conference , (under review), Bali, Indonesia, 2026.",
+      "venue": "Proceedings of the 15th Asian Control Conference (ASCC), pp. 1084–1089, 2026.",
       "year": 2026,
-      "status": "review",
+      "status": "published",
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Preprint/Underreview",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/ascc70886.2026.11702306"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:ULOm3_A8WrAC"
+        }
+      ]
     },
     {
       "id": "c1",
@@ -381,7 +561,12 @@
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:5nxA0vEk-isC"
+        }
+      ]
     },
     {
       "id": "c2",
@@ -393,7 +578,12 @@
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:IjCSPb-OGe4C"
+        }
+      ]
     },
     {
       "id": "c3",
@@ -405,7 +595,12 @@
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:u5HHmVD_uO8C"
+        }
+      ]
     },
     {
       "id": "c4",
@@ -417,11 +612,20 @@
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1109/cdc57313.2025.11312413"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:MXK_kJrjxJIC"
+        }
+      ]
     },
     {
       "id": "c5",
-      "authors": "D. Gan and R. Li",
+      "authors": "D. Gan, R. Li, C. Zhao, and X. Ji",
       "title": "Logarithmic regret bound for distributed adaptive sparse estimation without excitation condition",
       "venue": "in IFAC-PapersOnLine, ser. The 15th International Workshop on Adaptive and Learning Control Systems, vol. 59, 2025, pp. 226–231.",
       "year": 2025,
@@ -429,7 +633,16 @@
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.ifacol.2025.12.154"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:8k81kl-MbHgC"
+        }
+      ]
     },
     {
       "id": "c6",
@@ -453,7 +666,16 @@
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.ifacol.2023.10.905"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:ufrVoPGSRksC"
+        }
+      ]
     },
     {
       "id": "c8",
@@ -465,7 +687,12 @@
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:LkGwnXOMwfcC"
+        }
+      ]
     },
     {
       "id": "c9",
@@ -501,7 +728,54 @@
       "kind": "conference",
       "selected": false,
       "source_section": "Conference Published or Accepted",
-      "links": []
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:YOwf2qJgpHMC"
+        }
+      ]
+    },
+    {
+      "id": "pre1",
+      "title": "Distributed online learning with growing dimensions for stochastic large regression",
+      "authors": "D. Gan and Z. Liu",
+      "year": 2026,
+      "status": "preprint",
+      "kind": "preprint",
+      "venue": "arXiv:2610.39197, 2026.",
+      "selected": false,
+      "source_section": "Google Scholar and arXiv, verified 2026-11-06",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.39197"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:4TOpqqG69KYC"
+        }
+      ]
+    },
+    {
+      "id": "pre2",
+      "title": "Tracking analysis of compressed-communication distributed adaptive estimation for time-varying parameters",
+      "authors": "D. Gan, S. Chen, and Y. Wang",
+      "year": 2026,
+      "status": "preprint",
+      "kind": "preprint",
+      "venue": "arXiv:2610.39229, 2026.",
+      "selected": false,
+      "source_section": "Google Scholar and arXiv, verified 2026-11-06",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.39229"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qDLtk-oAAAAJ&citation_for_view=qDLtk-oAAAAJ:_kc_bZDykSQC"
+        }
+      ]
     }
   ],
   "projects": [
@@ -759,5 +1033,7 @@
   "mentoring": {
     "zh": "2025 年全国大学生数学建模竞赛全国一等奖 · 指导教师",
     "en": "National First Prize, 2025 China Undergraduate Mathematical Contest in Modeling · Supervisor"
-  }
+  },
+  "scholar": "https://scholar.google.com/citations?user=qDLtk-oAAAAJ&hl=zh-CN",
+  "publications_verified_on": "2026-11-06"
 }

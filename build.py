@@ -10,7 +10,7 @@ esc=lambda x:html.escape(str(x),quote=True)
 PAGES={'index':('简介','About'),'publications':('论文','Publications'),'projects':('项目','Projects'),'teaching':('教学','Teaching'),'experience':('经历','Experience'),'service':('服务与荣誉','Service & honors')}
 pubs=sorted(DATA['publications'],key=lambda p:-p['year'])
 assert len({p['id'] for p in pubs})==len(pubs),'Publication IDs must be unique'
-assert all(p['status'] in ['published','accepted','review','unspecified'] for p in pubs)
+assert all(p['status'] in ['published','accepted','review','preprint','unspecified'] for p in pubs)
 photo=DATA.get('photo','')
 if photo:
  resolved=(ROOT/photo).resolve()
@@ -21,24 +21,28 @@ for lang in ['zh','en']:
  def url(page,language=None):return page+('' if (language or lang)=='zh' else '-en')+'.html'
  def rows(key):
   return '<div class="timeline">'+''.join('<article class="timeline-row"><p class="date">'+esc(p['date'])+(t('至今','present') if p['date'].endswith('–') else '')+'</p><div>'+('<span class="badge">'+esc(p['role'][lang])+'</span> ' if 'role' in p else '')+esc(p[lang])+'</div></article>' for p in DATA[key])+'</div>'
- status={'published':t('已发表','Published'),'accepted':t('已录用','Accepted'),'review':t('在审','Under review'),'unspecified':t('预印本／在审栏目，具体状态未注明','Preprint / under-review section; exact status unspecified')}
+ status={'preprint':t('预印本','Preprints'),'published':t('已发表','Published'),'accepted':t('已录用','Accepted'),'review':t('在审','Under review'),'unspecified':t('预印本／在审栏目，具体状态未注明','Preprint / under-review section; exact status unspecified')}
  def paper(p):
   links=''
   for link in p.get('links',[]):
    assert urlparse(link['url']).scheme in ['https','http'],'Paper links must use HTTPS or HTTP'
    links+=f'<a class="paper-link" href="{esc(link["url"])}">{esc(link["label"])} ↗</a>'
+  title=esc(p['title'])
+  if p.get('links'):title=f'<a href="{esc(p["links"][0]["url"])}">{title}</a>'
+  kind={'journal':t('期刊','Journal'),'conference':t('会议','Conference'),'preprint':t('预印本','Preprint')}[p['kind']]
   authors=esc(p['authors']).replace('D. Gan','<strong>D. Gan</strong>')
-  return f'<article class="paper" data-year="{p["year"]}" data-status="{p["status"]}" data-kind="{p["kind"]}"><div class="paper-year">{p["year"]}</div><div class="paper-content"><div class="paper-meta">{t("期刊","Journal") if p["kind"]=="journal" else t("会议","Conference")}<span> / </span>{status[p["status"]]}</div><h3 lang="en">{esc(p["title"])}</h3><p class="authors" lang="en">{authors}</p><p class="venue" lang="en">{esc(p["venue"])}</p>{links}</div></article>'
+  return f'<article class="paper" data-year="{p["year"]}" data-status="{p["status"]}" data-kind="{p["kind"]}"><div class="paper-year">{p["year"]}</div><div class="paper-content"><div class="paper-meta">{kind}<span> / </span>{status[p["status"]]}</div><h3 lang="en">{title}</h3><p class="authors" lang="en">{authors}</p><p class="venue" lang="en">{esc(p["venue"])}</p>{links}</div></article>'
  def heading(title,note=''):
   return f'<div class="page-heading"><h1>{title}</h1>{"<p>"+note+"</p>" if note else ""}</div>'
- contact=f'<div class="contact-strip"><div><strong>{esc(DATA["affiliation"][lang])}</strong><p>{t("中国 · 上海","Shanghai, China")}</p></div><a href="mailto:{esc(DATA["email"])}">{esc(DATA["email"])} ↗</a></div>'
- home=f'<section class="profile {"has-photo" if photo else ""}" aria-labelledby="name"><div><p class="eyebrow">{t("复旦大学 · 数学科学学院","FUDAN UNIVERSITY · MATHEMATICS")}</p><h1 id="name">{esc(DATA["name"][lang])}<span>{t("Die Gan","甘叠")}</span></h1><p class="role">{esc(DATA["role"][lang])}</p><p class="bio">{esc(DATA["bio"][lang])}</p><div class="profile-links"><a href="mailto:{esc(DATA["email"])}">{esc(DATA["email"])} ↗</a><a href="{url("experience")}">{t("教育与工作经历","Experience & education")} →</a></div></div>'+(f'<img class="portrait" src="{esc(photo)}" alt="{esc(DATA["name"][lang])}" width="260" height="320">' if photo else '')+'</section>'
+ scholar=f'<a href="{esc(DATA["scholar"])}">Google Scholar ↗</a>' if DATA.get('scholar') else ''
+ contact=f'<div class="contact-strip"><div><strong>{esc(DATA["affiliation"][lang])}</strong><p>{t("中国 · 上海","Shanghai, China")}</p></div><a href="mailto:{esc(DATA["email"])}">{esc(DATA["email"])} ↗</a>{scholar}</div>'
+ home=f'<section class="profile {"has-photo" if photo else ""}" aria-labelledby="name"><div><p class="eyebrow">{t("复旦大学 · 数学科学学院","FUDAN UNIVERSITY · MATHEMATICS")}</p><h1 id="name">{esc(DATA["name"][lang])}<span>{t("Die Gan","甘叠")}</span></h1><p class="role">{esc(DATA["role"][lang])}</p><p class="bio">{esc(DATA["bio"][lang])}</p><div class="profile-links">{scholar}<a href="mailto:{esc(DATA["email"])}">{esc(DATA["email"])} ↗</a><a href="{url("experience")}">{t("教育与工作经历","Experience & education")} →</a></div></div>'+(f'<img class="portrait" src="{esc(photo)}" alt="{esc(DATA["name"][lang])}" width="260" height="320">' if photo else '')+'</section>'
  home+='<section class="research" aria-labelledby="research-title"><h2 id="research-title">'+t('研究方向','Research interests')+'</h2><div class="research-grid">'+''.join(f'<article><span class="number">0{i+1}</span><h3>{esc(r[lang][0])}</h3><p>{esc(r[lang][1])}</p></article>' for i,r in enumerate(DATA['research']))+'</div></section>'
  home+=f'<section class="selected" aria-labelledby="selected-title"><div class="section-heading"><h2 id="selected-title">{t("代表论文","Selected publications")}</h2><a href="{url("publications")}">{t("全部论文","All publications")} →</a></div>'+''.join(paper(p) for p in pubs if p.get('selected'))+'</section>'
  options=lambda pairs:''.join(f'<option value="{k}">{esc(v)}</option>' for k,v in pairs)
- filters=f'<div class="filters"><label for="search">{t("搜索论文","Search publications")}<input id="search" type="search" placeholder="{t("题名、作者、年份…","Title, author, year…")}"></label><label for="kind">{t("类型","Type")}<select id="kind">'+options([('all',t('全部类型','All types')),('journal',t('期刊','Journal')),('conference',t('会议','Conference'))])+f'</select></label><label for="status">{t("状态","Status")}<select id="status">'+options([('all',t('全部状态','All statuses'))]+list(status.items()))+'</select></label></div><p id="result-count" role="status" aria-live="polite"></p>'
- publications=heading(t('研究论文','Publications'),t('随机系统、自适应辨识与分布式学习。','Stochastic systems, adaptive identification and distributed learning.'))+f'<p class="editorial-note">{t("* 表示简历明确标注的通讯作者；作者顺序与发表状态按提供的简历保留。","* Corresponding author as explicitly marked in the supplied CV. Author order and publication statuses follow the CV.")}</p><div class="jump-links">'+''.join(f'<a href="#{s}">{status[s]} <span>{sum(p["status"]==s for p in pubs)}</span></a>' for s in ['published','accepted','review'])+'</div>'+filters+'<div id="all-publications">'
- for state in ['published','accepted','review','unspecified']:
+ filters=f'<div class="filters"><label for="search">{t("搜索论文","Search publications")}<input id="search" type="search" placeholder="{t("题名、作者、年份…","Title, author, year…")}"></label><label for="kind">{t("类型","Type")}<select id="kind">'+options([('all',t('全部类型','All types')),('journal',t('期刊','Journal')),('conference',t('会议','Conference')),('preprint',t('预印本','Preprint'))])+f'</select></label><label for="status">{t("状态","Status")}<select id="status">'+options([('all',t('全部状态','All statuses'))]+list(status.items()))+'</select></label></div><p id="result-count" role="status" aria-live="polite"></p>'
+ publications=heading(t('研究论文','Publications'),t('随机系统、自适应辨识与分布式学习。','Stochastic systems, adaptive identification and distributed learning.'))+f'<p class="editorial-note">{t("* 表示简历明确标注的通讯作者；作者顺序依据简历及原始论文记录；发表状态已结合 Google Scholar 和出版记录核对。","* Corresponding author as explicitly marked in the supplied CV. Author order follows the CV and original paper records; statuses have been checked against Google Scholar and publication records.")}</p><p class="scholar-note">{scholar} · {t("最近核对","Last checked")}: {esc(DATA["publications_verified_on"])}</p><div class="jump-links">'+''.join(f'<a href="#{s}">{status[s]} <span>{sum(p["status"]==s for p in pubs)}</span></a>' for s in ['published','accepted','review','preprint'])+'</div>'+filters+'<div id="all-publications">'
+ for state in ['published','accepted','review','preprint','unspecified']:
   group=[p for p in pubs if p['status']==state]
   if group:publications+=f'<section class="publication-group" id="{state}"><h2>{status[state]}</h2>'+''.join(paper(p) for p in group)+'</section>'
  publications+='</div><p id="empty" hidden>'+t('没有匹配的论文。请调整关键词或筛选条件。','No matching publications. Try another keyword or filter.')+'</p>'
