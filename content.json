@@ -1116,41 +1116,45 @@
       "en": "System identification for dexterous hands"
     },
     "intro": {
-      "zh": "希望将随机系统辨识与自适应估计的研究拓展到灵巧手，探索从关节运动与接触反馈中建立、更新系统模型的方法。",
-      "en": "I am interested in extending stochastic system identification and adaptive estimation to dexterous hands, exploring how joint motion and contact feedback can inform models that evolve with the system."
+      "zh": "未来希望将随机系统辨识、分布式学习与自适应估计的研究拓展到灵巧手，围绕“如何从运动与接触数据中获得可用于控制的模型”展开探索。拟从关节和驱动辨识出发，逐步研究多指协同、接触变化与闭环学习，关注模型的可解释性、在线更新能力及估计误差的理论分析。",
+      "en": "I plan to extend my research on stochastic system identification, distributed learning and adaptive estimation to dexterous hands. The central question is how motion and contact data can inform models useful for control. Starting with joint and actuator identification, I aim to explore multi-finger coordination, changing contact conditions and closed-loop learning, with an emphasis on interpretable models, online adaptation and theoretical analysis of estimation errors."
     },
     "questions": [
       {
         "zh": [
-          "关节与驱动动力学",
-          "如何辨识摩擦、耦合与驱动特性，建立适于在线估计的模型？"
+          "关节、驱动与多指耦合辨识",
+          "拟结合关节位置、速度和驱动输入等观测，研究摩擦、传动特性及关节间耦合的参数化描述。探索物理模型与稀疏辨识的结合，区分对预测和控制关键的动力学因素，并研究数据激励条件与参数可辨识性。"
         ],
         "en": [
-          "Joint & actuator dynamics",
-          "How can friction, coupling and actuator properties be identified in a model suitable for online estimation?"
+          "Joint, actuator and inter-finger identification",
+          "I aim to use observations such as joint positions, velocities and actuator inputs to study parameterized descriptions of friction, transmission effects and coupling between joints. Combining physical models with sparse identification may help isolate dynamics relevant to prediction and control. A related focus would be data excitation and parameter identifiability."
         ]
       },
       {
         "zh": [
-          "接触与参数变化",
-          "在接触条件变化、观测含噪时，如何估计关键参数并刻画不确定性？"
+          "接触变化与在线自适应估计",
+          "拟面向抓取和操作过程中接触状态、负载及对象特性的变化，探索利用运动、力觉或触觉反馈在线更新模型的方法。关注含噪、相关和非平稳观测下的估计性能，以及多关节、多指信息协同对参数跟踪和不确定性刻画的作用。"
         ],
         "en": [
-          "Contact & changing parameters",
-          "How can key parameters and uncertainty be estimated under changing contact conditions and noisy observations?"
+          "Changing contact and online adaptive estimation",
+          "I plan to investigate online model updates as contact states, loads and object properties change during grasping and manipulation, using motion, force or tactile feedback where available. Questions include estimation with noisy, correlated and nonstationary observations, and whether information shared across joints and fingers can improve parameter tracking and uncertainty characterization."
         ]
       },
       {
         "zh": [
-          "辨识与自适应控制",
-          "如何将在线更新的模型用于控制，并分析闭环中的估计与稳定性？"
+          "辨识与控制的闭环协同",
+          "拟研究如何将在线估计的模型用于自适应控制，并在控制反馈影响观测数据的条件下分析估计误差与闭环稳定性。进一步探索任务执行与信息获取之间的平衡：在约束条件下设计有助于辨识的动作，为灵巧操作中的模型更新提供依据。"
         ],
         "en": [
-          "Identification & adaptive control",
-          "How can online model updates inform control, with analysis of estimation and stability in closed loop?"
+          "Identification and control in closed loop",
+          "I aim to study how online model estimates can support adaptive control, and how estimation error and closed-loop stability can be analyzed when feedback influences the observed data. A further question is how to balance task execution with information gathering through informative actions subject to constraints."
         ]
       }
-    ]
+    ],
+    "approach": {
+      "zh": "计划采用“简化模型与可辨识性分析—仿真中的在线估计—面向任务的闭环验证”的递进路径，先研究单关节与少量耦合关节，再逐步扩展到多指接触场景。拟以参数估计误差、预测精度、跟踪性能及约束满足情况作为评价维度；具体实验平台与任务设置将随研究推进确定。",
+      "en": "The proposed path progresses from simplified models and identifiability analysis to online estimation in simulation and then task-oriented closed-loop validation. I would begin with a single joint and a small set of coupled joints before extending to multi-finger contact. Evaluation would consider parameter estimation error, prediction accuracy, tracking performance and constraint satisfaction. Experimental platforms and tasks remain to be determined as the research develops."
+    }
   },
   "biography_background": {
     "zh": "2017 年获山东大学数学与应用数学学士学位，2022 年获中国科学院数学与系统科学研究院系统理论博士学位。2022 至 2024 年在中关村实验室从事博士后研究，2024 至 2026 年任南开大学人工智能学院副教授。",

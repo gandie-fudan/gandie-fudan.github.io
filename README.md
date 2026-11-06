@@ -40,7 +40,7 @@
 - `year`：数字年份。页面在每个状态分组内自动按年份倒序。
 - `status`：`published`（已发表）、`accepted`（已录用）、`review`（在审）、`preprint`（预印本）、`unspecified`（确切状态未注明）。
 - `kind`：`journal`（期刊）、`conference`（会议）或 `preprint`（预印本）。
-- `selected`：`true` 会在首页代表论文中展示，`false` 只在完整列表展示。建议首页保持 4–6 篇。
+- `selected`：保留以便将来恢复代表论文展示；当前首页不显示论文列表，此字段不影响现有页面。
 - `links`：仅添加已核实的链接。例如 `[{"label":"DOI","url":"https://doi.org/实际的DOI"}]`；没有链接则保留 `[]`。
 
 ### Google Scholar 核对
@@ -59,7 +59,7 @@
 
 ## 页面结构
 
-- `index.html` / `index-en.html`：简介、研究主题、代表论文。
+- `index.html` / `index-en.html`：头像、简介、研究主题与概念图、灵巧手未来研究计划。
 - `experience.html` / `experience-en.html`：教育与工作经历。
 - `publications.html` / `publications-en.html`：论文完整列表、状态分类、搜索筛选。
 - `projects.html` / `projects-en.html`：项目及角色。
@@ -78,7 +78,9 @@
 
 简介正文在 `bio`，背景段落在 `biography_background`，需要加粗的已有短语在 `bio_emphasis`。编辑经历后请同步检查首页背景段落。
 
-首页的“灵巧手系统辨识”根据本人表达的兴趣设置，明确标注为计划探索方向，以简短文字展示。维护时修改 `exploration` 的标题和介绍即可，`questions` 作为备存资料暂不显示。删除整个 `exploration` 字段即可隐藏此区域。
+首页的“灵巧手系统辨识”根据本人表达的兴趣设置，明确标注为未来研究方向。`exploration.title` 和 `intro` 控制标题与导语，`questions` 控制三个研究主题及详细说明，`approach` 控制拟开展的研究路径。以上均有中文与英文。删除整个 `exploration` 字段即可隐藏此区域。
+
+首页恢复两幅原有概念图：研究方向旁的 `assets/research-map.svg` 和未来研究部分的 `assets/hand-study.svg`。图片均用于说明研究思路，不表示已有设备或实验结果。首页已移除代表论文列表，完整论文仍在独立“论文”栏目。新增布局样式限定在 `.index`，其他栏目排版保持原样。
 
 ## 首次部署设置（交接或迁移时使用）
 

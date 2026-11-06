@@ -18,7 +18,7 @@ for f in (R/'dist').glob('*.html'):
  s=f.read_text(encoding='utf-8');p=Page();p.feed(s);pages[f.name]=p
  assert len(p.ids)==len(set(p.ids)),f'Duplicate IDs in {f.name}'
  assert '021-65647856' not in s and 'Handan' not in s and 'cv-llt.pdf' not in s
- expected=len(D['publications']) if f.name.startswith('publications') else sum(bool(x.get('selected')) for x in D['publications']) if f.name.startswith('index') else 0
+ expected=len(D['publications']) if f.name.startswith('publications') else 0
  assert len(p.records)==expected,f'Publication count differs: {f.name}'
  for status in {x[0] for x in p.records}:
   years=[x[1] for x in p.records if x[0]==status]
