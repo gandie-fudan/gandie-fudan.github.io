@@ -3,7 +3,7 @@
 <rect width="440" height="400" fill="url(#dots)"/>
 <circle cx="230" cy="188" r="122" stroke="#b7cbd8" stroke-dasharray="3 8"/>
 <g stroke="#244f70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-<path d="M166 341v-31c-30-8-43-28-49-58l-32-58c-13-24 5-37 19-19l38 40-13-106c-3-23 19-26 23-4l19 81-1-118c0-24 24-24 24-1l7 112 14-124c3-24 26-22 23 3l-8 123 28-99c6-23 29-17 22 7l-24 118 24-51c11-22 31-10 20 11l-26 68c-7 36-20 57-44 69v42"/>
+<path d="M166 341v-31c-30-8-43-28-49-58l-32-58c-13-24 5-37 19-19l38 40-13-106c-3-23 19-26 23-4l19 81-1-118c0-24 24-24 24-1l7 112 14-124c3-24 26-22 23 3l-8 123 28-99c6-23 29-17 22 7l-10 116c4 55-12 88-40 109v42"/>
 <path d="m166 341 1 32h63l0-37M142 215l30 30m29-66 3 65m26-63-8 69m34-43-18 45M171 186l18 57M166 310l38-66 26 60" stroke-opacity=".3"/>
 </g>
 <g fill="#f7fafb" stroke="#244f70" stroke-width="1.8"><circle cx="142" cy="215" r="5"/><circle cx="156" cy="126" r="5"/><circle cx="193" cy="120" r="5"/><circle cx="232" cy="115" r="5"/><circle cx="267" cy="139" r="5"/><circle cx="204" cy="244" r="7"/><circle cx="174" cy="294" r="5"/><circle cx="232" cy="291" r="5"/></g>
