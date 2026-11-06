@@ -7,7 +7,7 @@ DATA=json.loads((ROOT/'content.json').read_text(encoding='utf-8'))
 OUT=ROOT/'dist'
 OUT.mkdir(exist_ok=True)
 esc=lambda x:html.escape(str(x),quote=True)
-PAGES={'index':('简介','About'),'experience':('经历','Experience'),'publications':('论文','Publications'),'projects':('项目','Projects'),'honors':('荣誉','Honors'),'teaching':('教学','Teaching'),'service':('服务','Service')}
+PAGES={'index':('简介','About'),'experience':('经历','Experience'),'publications':('论文','Publications'),'projects':('项目','Projects'),'patents':('专利','Patents'),'honors':('荣誉','Honors'),'teaching':('教学','Teaching'),'service':('服务','Service')}
 pubs=sorted(DATA['publications'],key=lambda p:-p['year'])
 assert len({p['id'] for p in pubs})==len(pubs),'Publication IDs must be unique'
 assert all(p['status'] in ['published','accepted','review','preprint','unspecified'] for p in pubs)
@@ -50,13 +50,13 @@ for lang in ['zh','en']:
   group=[p for p in pubs if p['status']==state]
   if group:publications+=f'<section class="publication-group" id="{state}"><h2>{status[state]}</h2>'+''.join(paper(p) for p in group)+'</section>'
  publications+='</div><p id="empty" hidden>'+t('没有匹配的论文。请调整关键词或筛选条件。','No matching publications. Try another keyword or filter.')+'</p>'
- publications+=f'<section class="patents"><h2>{t("专利","Patents")}</h2><div class="timeline">'+''.join(f'<article class="timeline-row"><p class="date">{esc(p["date"])}</p><div><span class="badge">{t("审查中","Under examination") if "Under Examination" in p["text"] else t("已授权","Granted")}</span><p lang="en">{esc(p["text"])}</p></div></article>' for p in sorted(DATA['patents'],key=lambda p:p['date'],reverse=True))+'</div></section>'
+ patents=heading(t('专利','Patents'))+'<div class="timeline">'+''.join(f'<article class="timeline-row"><p class="date">{esc(p["date"])}</p><div><span class="badge">{t("审查中","Under examination") if "Under Examination" in p["text"] else t("已授权","Granted")}</span><p lang="en">{esc(p["text"])}</p></div></article>' for p in sorted(DATA['patents'],key=lambda p:p['date'],reverse=True))+'</div>'
  projects=heading(t('科研项目','Research support'),t('以下项目均在简历中列为主持（PI），日期为项目起止时间。','All projects below are listed as PI in the CV. Dates indicate project periods.'))+rows('projects')
  teaching=heading(t('教学工作','Teaching'),t('课程教学与学生指导。','Courses and student mentoring.'))+rows('teaching')+f'<section class="mentoring"><h2>{t("教学与指导成果","Student mentoring")}</h2><p>{esc(DATA["mentoring"][lang])}</p></section>'
  experience=heading(t('教育与工作经历','Experience & education'))+f'<section><h2>{t("工作经历","Appointments")}</h2>'+rows('work')+f'</section><section class="spaced"><h2>{t("教育背景","Education")}</h2>'+rows('education')+'</section>'
  honors=heading(t('荣誉与奖励','Honors & awards'))+rows('honors')
  service=heading(t('学术服务','Professional service'))+rows('service')
- for page,body in dict(index=home,experience=experience,publications=publications,projects=projects,honors=honors,teaching=teaching,service=service).items():
+ for page,body in dict(index=home,experience=experience,publications=publications,projects=projects,patents=patents,honors=honors,teaching=teaching,service=service).items():
   nav=''.join(f'<a href="{url(k)}" {"aria-current=page" if k==page else ""}>{v[0 if zh else 1]}</a>' for k,v in PAGES.items())
   title=esc(DATA['name'][lang])+' · '+PAGES[page][0 if zh else 1]+' | '+t('复旦大学','Fudan University')
   doc=f'''<!doctype html>

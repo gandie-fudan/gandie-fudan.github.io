@@ -61,13 +61,14 @@
 
 - `index.html` / `index-en.html`：简介、研究主题、代表论文。
 - `experience.html` / `experience-en.html`：教育与工作经历。
-- `publications.html` / `publications-en.html`：论文完整列表、状态分类、搜索筛选、专利。
+- `publications.html` / `publications-en.html`：论文完整列表、状态分类、搜索筛选。
 - `projects.html` / `projects-en.html`：项目及角色。
+- `patents.html` / `patents-en.html`：专利及简历记录的授权/审查状态。
 - `honors.html` / `honors-en.html`：荣誉与奖励。
 - `teaching.html` / `teaching-en.html`：教学与指导。
 - `service.html` / `service-en.html`：学术服务。
 
-主导航顺序为：简介、经历、论文、项目、荣誉、教学、服务（About, Experience, Publications, Projects, Honors, Teaching, Service）。荣誉与服务分别读取 `content.json` 中的 `honors` 和 `service` 字段。
+主导航顺序为：简介、经历、论文、项目、专利、荣誉、教学、服务（About, Experience, Publications, Projects, Patents, Honors, Teaching, Service）。专利、荣誉与服务分别读取 `content.json` 中的 `patents`、`honors` 和 `service` 字段。
 
 两种语言始终切换到对应页面。内容在 HTML 内，关闭 JavaScript 仍能阅读全部论文。
 

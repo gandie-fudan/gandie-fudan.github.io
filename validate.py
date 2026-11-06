@@ -23,7 +23,7 @@ for f in (R/'dist').glob('*.html'):
  for status in {x[0] for x in p.records}:
   years=[x[1] for x in p.records if x[0]==status]
   assert years==sorted(years,reverse=True),f'Incorrect chronological order in {f.name}'
-assert len(pages)==14,'Expected 7 pages in each language'
+assert len(pages)==16,'Expected 8 pages in each language'
 for name,p in pages.items():
  for href in p.links:
   u=urlparse(href)
