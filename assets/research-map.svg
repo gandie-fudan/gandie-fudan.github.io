@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="340" viewBox="0 0 480 340" fill="none">
+<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#fff" stroke-opacity=".065"/></pattern><linearGradient id="line" x1="30" y1="280" x2="450" y2="70"><stop stop-color="#8db5cf"/><stop offset="1" stop-color="#e9d4aa"/></linearGradient></defs>
+<rect width="480" height="340" fill="url(#grid)"/>
+<g stroke="#9eb6cb" stroke-opacity=".25"><path d="M55 244 112 143 187 219 256 110 338 172 416 80"/><path d="m55 244 132-25 69-109 160-30M112 143l144-33 82 62 78-92M187 219l151-47"/><circle cx="256" cy="110" r="57" stroke-dasharray="3 7"/><circle cx="256" cy="110" r="86" stroke-dasharray="3 9"/></g>
+<path d="M30 288C65 290 67 191 102 221S134 280 169 214 206 105 242 145 287 226 317 166 360 89 393 106 428 81 453 51" stroke="url(#line)" stroke-width="2.5"/>
+<path d="M30 288C80 264 117 250 166 217S242 170 295 148 384 102 453 51" stroke="#fff" stroke-opacity=".27" stroke-width="1.5" stroke-dasharray="5 7"/>
+<g fill="#173d60" stroke="#d8e7ef" stroke-width="1.5"><circle cx="55" cy="244" r="5"/><circle cx="112" cy="143" r="5"/><circle cx="187" cy="219" r="5"/><circle cx="256" cy="110" r="7"/><circle cx="338" cy="172" r="5"/><circle cx="416" cy="80" r="5"/></g>
+<g fill="#e8d5af"><circle cx="242" cy="145" r="4"/><circle cx="393" cy="106" r="4"/></g>
+<g fill="#9fb8cc" font-family="Georgia,serif" font-size="16" font-style="italic"><text x="70" y="239">x₁</text><text x="122" y="133">x₂</text><text x="269" y="102">θ</text><text x="350" y="188">xₙ</text></g>
+<path d="M30 311H453" stroke="#8db5cf" stroke-opacity=".35"/><g fill="#a6bdcf" font-family="Arial,sans-serif" font-size="10" letter-spacing="2"><text x="30" y="332">OBSERVATIONS</text><text x="335" y="332">IDENTIFICATION</text></g>
+</svg>

@@ -1035,5 +1035,47 @@
     "en": "National First Prize, 2025 China Undergraduate Mathematical Contest in Modeling · Supervisor"
   },
   "scholar": "https://scholar.google.com/citations?user=qDLtk-oAAAAJ&hl=zh-CN",
-  "publications_verified_on": "2026-11-06"
+  "publications_verified_on": "2026-11-06",
+  "exploration": {
+    "title": {
+      "zh": "灵巧手系统辨识",
+      "en": "System identification for dexterous hands"
+    },
+    "intro": {
+      "zh": "希望将随机系统辨识与自适应估计的研究拓展到灵巧手，探索从关节运动与接触反馈中建立、更新系统模型的方法。",
+      "en": "I am interested in extending stochastic system identification and adaptive estimation to dexterous hands, exploring how joint motion and contact feedback can inform models that evolve with the system."
+    },
+    "questions": [
+      {
+        "zh": [
+          "关节与驱动动力学",
+          "如何辨识摩擦、耦合与驱动特性，建立适于在线估计的模型？"
+        ],
+        "en": [
+          "Joint & actuator dynamics",
+          "How can friction, coupling and actuator properties be identified in a model suitable for online estimation?"
+        ]
+      },
+      {
+        "zh": [
+          "接触与参数变化",
+          "在接触条件变化、观测含噪时，如何估计关键参数并刻画不确定性？"
+        ],
+        "en": [
+          "Contact & changing parameters",
+          "How can key parameters and uncertainty be estimated under changing contact conditions and noisy observations?"
+        ]
+      },
+      {
+        "zh": [
+          "辨识与自适应控制",
+          "如何将在线更新的模型用于控制，并分析闭环中的估计与稳定性？"
+        ],
+        "en": [
+          "Identification & adaptive control",
+          "How can online model updates inform control, with analysis of estimation and stability in closed loop?"
+        ]
+      }
+    ]
+  }
 }

@@ -22,6 +22,7 @@
 | 姓名、职称、单位、简介、邮箱 | name、role、affiliation、bio、email |
 | 个人照片 | photo |
 | 四个研究主题 | research |
+| 计划探索的方向与研究问题 | exploration（中英标题、介绍、questions） |
 | 全部论文 | publications |
 | 主持或参与项目 | projects 中的 role |
 | 课程与指导成果 | teaching、mentoring |
@@ -66,6 +67,12 @@
 - `service.html` / `service-en.html`：服务与荣誉。
 
 两种语言始终切换到对应页面。内容在 HTML 内，关闭 JavaScript 仍能阅读全部论文。
+
+### 视觉与探索方向（2026-11-06 更新）
+
+新版使用宋体/衬线标题、深蓝研究图版和少量金色强调，保留18px正文、16px作者与刊物信息。两幅概念图为本站原创 SVG：`assets/research-map.svg` 和 `assets/hand-study.svg`；它们不表示真实实验结果或已有硬件设备。网站无需加载第三方字体或图片。
+
+首页的“灵巧手系统辨识”根据本人新表达的兴趣设置，明确标注为计划探索方向，包含关节与驱动动力学、接触与参数变化、辨识与自适应控制三个拟探索问题。维护时修改 `exploration` 即可；不要将计划性文字改为已取得的成果，除非有实际依据。删除整个 `exploration` 字段即可隐藏此区域。
 
 ## 首次部署设置（交接或迁移时使用）
 
