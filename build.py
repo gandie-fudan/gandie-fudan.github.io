@@ -7,7 +7,7 @@ DATA=json.loads((ROOT/'content.json').read_text(encoding='utf-8'))
 OUT=ROOT/'dist'
 OUT.mkdir(exist_ok=True)
 esc=lambda x:html.escape(str(x),quote=True)
-PAGES={'index':('简介','About'),'publications':('论文','Publications'),'projects':('项目','Projects'),'teaching':('教学','Teaching'),'experience':('经历','Experience'),'service':('服务与荣誉','Service & honors')}
+PAGES={'index':('简介','About'),'experience':('经历','Experience'),'publications':('论文','Publications'),'projects':('项目','Projects'),'honors':('荣誉','Honors'),'teaching':('教学','Teaching'),'service':('服务','Service')}
 pubs=sorted(DATA['publications'],key=lambda p:-p['year'])
 assert len({p['id'] for p in pubs})==len(pubs),'Publication IDs must be unique'
 assert all(p['status'] in ['published','accepted','review','preprint','unspecified'] for p in pubs)
@@ -54,8 +54,9 @@ for lang in ['zh','en']:
  projects=heading(t('科研项目','Research support'),t('以下项目均在简历中列为主持（PI），日期为项目起止时间。','All projects below are listed as PI in the CV. Dates indicate project periods.'))+rows('projects')
  teaching=heading(t('教学工作','Teaching'),t('课程教学与学生指导。','Courses and student mentoring.'))+rows('teaching')+f'<section class="mentoring"><h2>{t("教学与指导成果","Student mentoring")}</h2><p>{esc(DATA["mentoring"][lang])}</p></section>'
  experience=heading(t('教育与工作经历','Experience & education'))+f'<section><h2>{t("工作经历","Appointments")}</h2>'+rows('work')+f'</section><section class="spaced"><h2>{t("教育背景","Education")}</h2>'+rows('education')+'</section>'
- service=heading(t('学术服务与荣誉','Service & honors'))+f'<section><h2>{t("学术服务","Professional service")}</h2>'+rows('service')+f'</section><section class="spaced"><h2>{t("荣誉与奖励","Honors & awards")}</h2>'+rows('honors')+'</section>'
- for page,body in dict(index=home,publications=publications,projects=projects,teaching=teaching,experience=experience,service=service).items():
+ honors=heading(t('荣誉与奖励','Honors & awards'))+rows('honors')
+ service=heading(t('学术服务','Professional service'))+rows('service')
+ for page,body in dict(index=home,experience=experience,publications=publications,projects=projects,honors=honors,teaching=teaching,service=service).items():
   nav=''.join(f'<a href="{url(k)}" {"aria-current=page" if k==page else ""}>{v[0 if zh else 1]}</a>' for k,v in PAGES.items())
   title=esc(DATA['name'][lang])+' · '+PAGES[page][0 if zh else 1]+' | '+t('复旦大学','Fudan University')
   doc=f'''<!doctype html>
@@ -63,4 +64,4 @@ for lang in ['zh','en']:
   (OUT/url(page)).write_text(doc,encoding='utf-8')
 shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
 (OUT/'.nojekyll').touch()
-print(f'Built 12 bilingual pages; {len(pubs)} publications; {len(DATA["projects"])} projects.')
+print(f'Built {len(PAGES)*2} bilingual pages; {len(pubs)} publications; {len(DATA["projects"])} projects.')
